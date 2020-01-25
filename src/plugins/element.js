@@ -23,7 +23,11 @@ import {
   Tooltip,
   Pagination,
   Dialog,
-  MessageBox
+  MessageBox,
+  Tag,
+  Tree,
+  Select,
+  Option
 } from "element-ui";
 //导入弹框提示组件
 import { Message } from "element-ui";
@@ -50,7 +54,11 @@ Vue.use(Container)
   .use(Switch)
   .use(Tooltip)
   .use(Pagination)
-  .use(Dialog);
+  .use(Dialog)
+  .use(Tag)
+  .use(Tree)
+  .use(Select)
+  .use(Option);
 
 //Message必须挂载到全局中
 Vue.prototype.$message = Message;
