@@ -7,6 +7,7 @@ const Welcome = () => import("components/Welcome");
 const User = () => import("../components/user/User");
 const Right = () => import("components/power/Right");
 const Role = () => import("components/power/Role");
+const Cate = () => import("components/goods/Cate");
 
 Vue.use(VueRouter);
 
@@ -27,14 +28,9 @@ const router = new VueRouter({
       children: [
         { path: "/welcome", component: Welcome },
         { path: "/users", component: User },
-        {
-          path: "/rights",
-          component: Right
-        },
-        {
-          path: "/roles",
-          component: Role
-        }
+        { path: "/rights", component: Right },
+        { path: "/roles", component: Role },
+        { path: "/categories", component: Cate }
       ]
     }
   ],
