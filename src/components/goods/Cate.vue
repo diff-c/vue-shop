@@ -56,7 +56,7 @@
         <el-form-item label="父级分类">
           <!-- 级联选择器 -->
           <el-cascader v-model="selected" :options="parentCateList" :props="parentProps" clearable
-            @change="handleChange">
+            @change="handleChange" class="parentCate">
           </el-cascader>
         </el-form-item>
       </el-form>
@@ -225,5 +225,8 @@ export default {
 }
 .treeTable {
   margin: 15px 0;
+}
+.parentCate {
+  width: 100%;
 }
 </style>

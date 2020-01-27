@@ -28,7 +28,10 @@ import {
   Tree,
   Select,
   Option,
-  Cascader
+  Cascader,
+  Alert,
+  Tabs,
+  TabPane
 } from "element-ui";
 //导入弹框提示组件
 import { Message } from "element-ui";
@@ -60,7 +63,10 @@ Vue.use(Container)
   .use(Tree)
   .use(Select)
   .use(Option)
-  .use(Cascader);
+  .use(Cascader)
+  .use(Alert)
+  .use(Tabs)
+  .use(TabPane);
 
 //Message必须挂载到全局中
 Vue.prototype.$message = Message;
