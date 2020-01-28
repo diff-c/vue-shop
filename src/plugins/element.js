@@ -36,7 +36,9 @@ import {
   Steps,
   CheckboxGroup,
   Checkbox,
-  Upload
+  Upload,
+  Timeline,
+  TimelineItem
 } from "element-ui";
 //导入弹框提示组件
 import { Message } from "element-ui";
@@ -76,7 +78,9 @@ Vue.use(Container)
   .use(Steps)
   .use(CheckboxGroup)
   .use(Checkbox)
-  .use(Upload);
+  .use(Upload)
+  .use(Timeline)
+  .use(TimelineItem);
 
 //Message必须挂载到全局中
 Vue.prototype.$message = Message;
