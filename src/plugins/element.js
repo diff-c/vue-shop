@@ -31,7 +31,12 @@ import {
   Cascader,
   Alert,
   Tabs,
-  TabPane
+  TabPane,
+  Step,
+  Steps,
+  CheckboxGroup,
+  Checkbox,
+  Upload
 } from "element-ui";
 //导入弹框提示组件
 import { Message } from "element-ui";
@@ -66,7 +71,12 @@ Vue.use(Container)
   .use(Cascader)
   .use(Alert)
   .use(Tabs)
-  .use(TabPane);
+  .use(TabPane)
+  .use(Step)
+  .use(Steps)
+  .use(CheckboxGroup)
+  .use(Checkbox)
+  .use(Upload);
 
 //Message必须挂载到全局中
 Vue.prototype.$message = Message;

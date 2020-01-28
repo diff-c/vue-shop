@@ -6,3 +6,23 @@ body,
     margin: 0;
     min-width: 1366px;
 }
+
+.el-breadcrumb {
+    font-size: 12px;
+}
+
+.el-table {
+    font-size: 12px;
+}
+
+.el-steps {
+    margin: 15px 0;
+}
+
+.el-step__title {
+    font-size: 12px;
+}
+
+.ql-editor {
+    min-height: 300px;
+}

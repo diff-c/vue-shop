@@ -9,6 +9,8 @@ const Right = () => import("components/power/Right");
 const Role = () => import("components/power/Role");
 const Cate = () => import("components/goods/Cate");
 const Params = () => import("components/goods/Params");
+const GoodsList = () => import("components/goods/List");
+const Add = () => import("components/goods/Add");
 
 Vue.use(VueRouter);
 
@@ -32,7 +34,9 @@ const router = new VueRouter({
         { path: "/rights", component: Right },
         { path: "/roles", component: Role },
         { path: "/categories", component: Cate },
-        { path: "/params", component: Params }
+        { path: "/params", component: Params },
+        { path: "/goods", component: GoodsList },
+        { path: "/goods/add", component: Add }
       ]
     }
   ],
